@@ -1,0 +1,116 @@
+h1{
+  text-align: center;
+  width: 100%;
+  color: #68b0ab
+
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+}
+.row{
+  border: 2px solid ;
+  padding-top: 10px;
+}
+.col-10 {
+  width: 10%;
+}
+
+.col-23 {
+  width: 23%;
+}
+input[type=text], input[type=date], input[type=number], input[type=email], input[type=tel] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type=submit]{
+  width: 30%;
+  background-color: #68b0ab;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  margin-left: 350px;
+  cursor: pointer;
+}
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+
+.branch input{
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #d6d2c4;
+}
+
+.branch:hover input ~ .checkmark {
+  background-color: #838383;
+}
+
+.branch input:checked ~ .checkmark {
+  background-color: #68b0ab;
+}
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.branch input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.branch .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.branch{
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+table, th, td {
+	border: 1px solid black;
+	border-spacing: 0px;
+}
+
+th, td {
+	padding: 10px;
+}
